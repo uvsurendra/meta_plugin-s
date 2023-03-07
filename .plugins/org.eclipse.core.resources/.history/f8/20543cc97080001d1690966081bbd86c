@@ -1,0 +1,50 @@
+package collections;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		Map<String,Double> smartWatchesCollection=new HashMap<>();
+		smartWatchesCollection.put("apple", 40000.00);
+		smartWatchesCollection.put("boat", 5000.00);
+		smartWatchesCollection.put("fastTrack", 10000.00);
+		smartWatchesCollection.put("Titan", 20000.00);
+		smartWatchesCollection.put("noise", 8000.00);
+		System.out.println("collection of smartwatchescollection size "+smartWatchesCollection.size());
+		smartWatchesCollection.remove("boat");
+		System.out.println("After remove one value collection of smartwatchescollection size "+smartWatchesCollection.size());
+		
+		
+		Map<String,Double> smartTvs=new LinkedHashMap<>();
+		smartTvs.put("samsung", 80000.00);
+		smartTvs.put("mi", 40000.00);
+		smartTvs.put("vivi", 50000.00);
+		smartTvs.put("sony", 56000.00);
+		smartTvs.put("lg", 20000.00);
+		System.out.println("collection of smartTvs "+smartTvs.size());
+		smartTvs.putAll(smartWatchesCollection);
+		
+		Set<String> allkeys=smartWatchesCollection.keySet();
+		for(String key:allkeys) {
+			System.out.println(key);
+		}
+		Set<String> allkeys2=smartTvs.keySet();
+		for(String key1:allkeys2) {
+			System.out.println(key1);
+		}
+		Set<Map.Entry<String, Double>> collection=smartTvs.entrySet();
+		for(Map.Entry<String, Double> list:collection) {
+			System.out.println(list.getKey()+":"+list.getValue());
+		}
+		
+		
+		
+		
+
+	}
+
+}

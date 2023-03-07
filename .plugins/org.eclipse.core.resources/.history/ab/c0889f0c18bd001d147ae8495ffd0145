@@ -1,0 +1,36 @@
+package com;
+
+public class MethodOverLoading {
+	
+	int a=89;
+	float b=56.89f;
+	double c=34.78;
+	
+	int add(int a, float b, double c) {
+		double d=a+b+c;
+		return (int) d;
+		
+	}
+	String add(String g  ) {
+		
+
+		 return g;
+		
+		 
+		
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		MethodOverLoading ml=new MethodOverLoading();
+		int x=ml.add(89, 56.98f, 34.78);
+		String y=ml.add("Surendra");
+		System.out.println(x);
+		System.out.println(y);
+
+	}
+
+}

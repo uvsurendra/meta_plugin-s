@@ -1,0 +1,19 @@
+package practice;
+
+public class SingleInheritanceDemo2 extends SingleInheritanceDemo{
+
+	String add(String a,String b,int c) {
+	 
+		return a+b+c;
+	
+		
+	}
+	public static void main (String arug[]) {
+		SingleInheritanceDemo2 sl=new SingleInheritanceDemo2();
+		int x=sl.add(56, 90);
+		String y=sl.add("Hello Surendra", " How are you",67);
+			System.out.println("a b value is "+ x);
+			System.out.println(y);
+		
+	}
+}

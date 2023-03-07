@@ -1,0 +1,17 @@
+package practice;
+
+public class HierarchicalDemo {
+	
+	String studentName;
+	int rollNumber;
+	String branch;
+	String collegeName;
+	
+	
+	String college(String studentName,int rollNumber) {
+		return studentName+rollNumber;
+		
+	}
+	
+}
+   

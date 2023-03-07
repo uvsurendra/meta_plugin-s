@@ -1,0 +1,22 @@
+package controlstructures;
+
+public class BreakDemo2 {
+
+	public void printNumbers() {
+		for(int i=8;i<56;i++) {
+			if(i==19) {
+				
+				break;
+			}
+			System.out.print(i ", ");
+		}
+	}
+	public static void main(String[] args) {
+		BreakDemo2 bl=new BreakDemo2();
+		
+		bl.printNumbers();
+		
+
+	}
+
+}

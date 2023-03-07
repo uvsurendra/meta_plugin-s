@@ -1,0 +1,20 @@
+package practice;
+
+public class MultilevalInheritance3 extends MultilevelInheritance2 {
+	
+	void multification(int a,int b) {
+		int c=a+b;
+		System.out.println("c value is "+ c);
+	}
+
+	public static void main(String[] args) {
+		MultilevalInheritance3 ml=new MultilevalInheritance3();
+		int x=ml.sum(56, 126, 67.98f);
+		String y=ml.add(126, 26, "Hello Surendra");
+		System.out.println("x values is " +x);
+		System.out.println("y values is "+ y);
+	
+
+	}
+
+}

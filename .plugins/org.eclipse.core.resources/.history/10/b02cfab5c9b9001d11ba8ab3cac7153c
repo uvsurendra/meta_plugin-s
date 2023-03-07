@@ -1,0 +1,22 @@
+package practice;
+
+public class HierarchicalDemo3 extends HierarchicalDemo{
+	
+	boolean studentAttendCollege;
+	
+	boolean college(boolean studentAttendCollege) {
+         return studentAttendCollege;
+         
+	}
+
+	public static void main(String[] args) {
+		HierarchicalDemo3 ml=new HierarchicalDemo3();
+		String x=ml.college("U V Surendra", 35);
+		boolean y=ml.college(true);
+	System.out.println("Student Name and RollNumber "+ x);
+	System.out.println("Student Attend the Class "+ y);
+		
+
+	}
+
+}

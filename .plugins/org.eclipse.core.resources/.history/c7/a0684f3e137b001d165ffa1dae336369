@@ -1,0 +1,58 @@
+package controlstructures;
+
+public class ArrayDemo {
+	
+	public static void arrayDemo() {
+		//array object creation datatype[] arrayname =new datatype[];
+		String[] arrayname=new String[5];
+		//inserting values 
+		//arrayname[index]="value";
+		arrayname[0]="surendra";
+		arrayname[1]="sunil";
+		arrayname[2]="vinod";
+		arrayname[3]="satish";
+		arrayname[4]="subbaraju";
+		
+		//how to itterate arrayname or collections
+		//using either forloop and foeeach metho
+		
+		//for(String array:arrayname) {
+			//System.out.println(array);
+		for(int i=0;i<arrayname.length;i++) {
+			System.out.print(arrayname[i]+", ");
+		}
+			
+		}
+		//System.out.println("end of the loop");
+	//}
+        public void arrayDemo2() {
+        	//arraycreation in single line
+        	//datatype[] arrayname={value1,value2,value3};
+        	//String[] vowlwrs= {"a","r","t","g","d"};
+        	int[] suri= {23,76,89,90};
+        	
+        	for(int i=0;i<suri.length;i++) {
+        		System.out.print(suri[i]+", ");
+        	}
+        }
+        
+        public void accessOneValue() {
+        	int[] arrayname= {56,89,67,45,67};
+        	//arrayname[indexvalue]
+        	//System.out.print(arrayname[3]);
+        	for(int array:arrayname) {
+        		System.out.println(array);
+        	}
+        	for(int i=0;i<arrayname.length;i++) {
+        		System.out.println(i);
+        	}
+        	
+        }
+	public static void main(String[] args) {
+ArrayDemo hi=new ArrayDemo();
+		hi.arrayDemo2();
+		hi.accessOneValue();
+
+	}
+
+}

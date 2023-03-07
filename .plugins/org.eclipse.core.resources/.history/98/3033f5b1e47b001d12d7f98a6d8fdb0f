@@ -1,0 +1,26 @@
+package controlstructures;
+
+public class IfElseStatement {
+	
+	public static void ifElseDemo() {
+		int a=56;
+		int b=78;
+		 //if(a==b) {
+		if(a+b<99) {
+			System.out.println("a+b is the bigest value");
+			
+		}
+		 else if (a+b<99) {
+			 System.out.println(a+b>99);
+		 }
+		else {
+			 System.out.println("a+b is  biggest value");
+		 }
+	}
+
+	public static void main(String[] args) {
+		ifElseDemo();
+		
+	}
+
+}

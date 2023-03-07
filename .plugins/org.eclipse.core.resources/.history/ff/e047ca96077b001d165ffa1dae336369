@@ -1,0 +1,28 @@
+package controlstructures;
+
+public class ContinueDemo {
+	
+	
+
+	public static void main(String[] args) {
+		String[] array= {"surendra","vinod","satish","sunil"};
+		
+		for(String demo:array) {
+			if(demo.equals("surendra")||demo.equals("sunil")) {
+				continue;
+			}
+			
+			
+			System.out.println(demo);
+			
+		}
+		String[] arra= {"surendra","vinod","satish","sunil"};
+		for(int i=arra.length-1;i>=0;i++) {
+			if(i.equals("surendra")||i.equals("sunil")) {
+				continue;
+			}
+			
+		}
+	}
+
+}

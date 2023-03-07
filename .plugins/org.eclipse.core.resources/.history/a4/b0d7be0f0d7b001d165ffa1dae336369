@@ -1,0 +1,30 @@
+package controlstructures;
+
+public class ArrayDemo {
+	
+	public static void arrayDemo() {
+		//array object creation datatype[] arrayname =new datatype[];
+		String[] arrayname=new String[5];
+		//inserting values 
+		//arrayname[index]="value";
+		arrayname[0]="surendra";
+		arrayname[1]="sunil";
+		arrayname[2]="vinod";
+		arrayname[3]="satish";
+		arrayname[4]="subbaraju";
+		
+		//how to itterate arrayname or collections
+		//using either forloop and foeeach metho
+		
+		for(String array:arrayname) {
+			System.out.println(array);
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

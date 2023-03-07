@@ -1,0 +1,39 @@
+package controlstructures;
+
+public class ArrayDemo {
+	
+	public static void arrayDemo() {
+		//array object creation datatype[] arrayname =new datatype[];
+		String[] arrayname=new String[5];
+		//inserting values 
+		//arrayname[index]="value";
+		arrayname[0]="surendra";
+		arrayname[1]="sunil";
+		arrayname[2]="vinod";
+		arrayname[3]="satish";
+		arrayname[4]="subbaraju";
+		
+		//how to itterate arrayname or collections
+		//using either forloop and foeeach metho
+		
+		for(String array:arrayname) {
+			System.out.println(array);
+			
+		}
+		System.out.println("end of the loop");
+	}
+        public void arrayDemo2() {
+        	//arraycreation in single line
+        	//datatype[] arrayname={value1,value2,value3};
+        	String[] vowlwrs= {"a","r","t","g","d"};
+        	for(int i=4;i>vowlwrs.length;i--) {
+        		System.out.println(vowlwrs[i]);
+        	}
+        }
+	public static void main(String[] args) {
+		ArrayDemo hi=new ArrayDemo();
+		hi.arrayDemo2();
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package controlstructures;
+
+public class ForEachLoop {
+	
+	
+		
+    public static void forStatement() {
+    	
+    	String[] fruits= {"kiwi","mango","banana","apple"};
+    	for(String eachFruit:fruits) {
+    		System.out.println(eachFruit);
+    	}	
+    	
+    	
+    	
+    }
+    
+    public void forLoopStatement() {
+    	String[] fruits= {"kiwi","mango","banana","apple"};
+    	
+    	for(int i=fruits.length+1;i>=0;i--) {
+    		System.out.print(fruits[i]+", ");
+    	}
+	}
+	public static void main(String[] args) {
+		ForEachLoop fl=new ForEachLoop();
+		fl.forLoopStatement();
+		
+		
+	}
+
+
+}
